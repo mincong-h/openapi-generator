@@ -19,3 +19,6 @@ mvn clean install
 ## Questions
 
 - What generates the source code in `src/gen/java`?
+
+This is a Maven plugin [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md)
+but it is not used in any official samples.
