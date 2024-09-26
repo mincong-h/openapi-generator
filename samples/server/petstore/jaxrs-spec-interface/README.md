@@ -10,3 +10,15 @@ This example uses the [JAX-RS](https://jax-rs-spec.java.net/) framework.
 This project produces a jar that defines some interfaces.
 The jar can be used in combination with an other project providing the implementation.
 
+## Build
+
+```
+mvn clean install
+```
+
+## Questions
+
+- What generates the source code in `src/gen/java`?
+
+This is a Maven plugin [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md)
+but it is not used in any official samples.

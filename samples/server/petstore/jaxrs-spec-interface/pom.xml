@@ -8,6 +8,10 @@
 
 
   <build>
+    <!--
+     This source directory does not exist. However, it does not hurt the Maven build command.
+     It is just that in IntelliJ we see a read flag.
+     -->
     <sourceDirectory>src/main/java</sourceDirectory>
     <plugins>
       <plugin>
@@ -23,6 +27,9 @@
             </goals>
             <configuration>
               <sources>
+                <!--
+                  Here an additional source directory is included into the build system as "src/gen/java".
+                  -->
                 <source>src/gen/java</source>
               </sources>
             </configuration>
@@ -36,6 +43,7 @@
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
     <dependency>
       <groupId>jakarta.ws.rs</groupId>
